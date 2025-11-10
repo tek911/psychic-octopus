@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1a1a2e</color>
+    <color name="primary_dark">#0f0f1e</color>
+    <color name="accent">#16213e</color>
+    <color name="accent_dark">#0a1128</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Game Colors -->
+    <color name="node_red">#FF4444</color>
+    <color name="node_blue">#4444FF</color>
+    <color name="node_purple">#AA44FF</color>
+    <color name="node_green">#44FF88</color>
+    <color name="node_yellow">#FFDD44</color>
+    <color name="node_wildcard">#FFFFFF</color>
+</resources>

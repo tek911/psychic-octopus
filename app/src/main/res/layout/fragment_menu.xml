@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/primary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXUS PATHS"
+        android:textSize="48sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvHighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Score: 0"
+        android:textSize="20sp"
+        android:textColor="@color/node_yellow"
+        android:layout_marginBottom="48dp" />
+
+    <TextView
+        android:id="@+id/tvShards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nexus Shards: 0"
+        android:textSize="18sp"
+        android:textColor="@color/node_blue"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/play"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/node_green" />
+
+    <Button
+        android:id="@+id/btnUpgrades"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/upgrades"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/node_blue" />
+
+    <Button
+        android:id="@+id/btnAchievements"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/achievements"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/node_purple" />
+
+    <Button
+        android:id="@+id/btnDailyChallenge"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/daily_challenge"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/node_yellow" />
+
+</LinearLayout>
