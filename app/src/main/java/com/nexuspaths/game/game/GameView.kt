@@ -136,12 +136,15 @@ class GameView @JvmOverloads constructor(
         // Draw cores
         drawCores(canvas)
 
-        // Draw grid nodes
+        // Draw grid nodes with animation time
+        val animationTime = (currentTime - gameStartTime) / 1000f  // Convert to seconds
         hexGrid.getAllNodes().forEach { node ->
             // Fade in new nodes
             if (node.alpha < 255) {
                 node.alpha = (node.alpha + deltaTime * 500).toInt().coerceAtMost(255)
             }
+            // Update animation time for shader effects
+            node.animationTime = animationTime
             node.draw(canvas, hexGrid.hexSize, paint)
         }
 
