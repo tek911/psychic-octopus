@@ -16,7 +16,11 @@ enum class NodeColor(val colorValue: Int, val coreName: String) {
 
     companion object {
         fun random(includeWildcard: Boolean = false): NodeColor {
-            val colors = if (includeWildcard) values() else values().filter { it != WILDCARD }
+            val colors = if (includeWildcard) {
+                values().toList()
+            } else {
+                values().filter { it != WILDCARD }
+            }
             return colors.random()
         }
 
