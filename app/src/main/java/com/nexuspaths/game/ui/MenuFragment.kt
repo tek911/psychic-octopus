@@ -56,5 +56,10 @@ class MenuFragment : Fragment() {
         view.findViewById<Button>(R.id.btnDailyChallenge).setOnClickListener {
             (activity as? MainActivity)?.showFragment(DailyChallengeFragment(), true)
         }
+
+        // How to Play button
+        view.findViewById<Button>(R.id.btnHowToPlay).setOnClickListener {
+            (activity as? MainActivity)?.showFragment(HowToPlayFragment(), true)
+        }
     }
 }
