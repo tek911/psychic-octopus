@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOW TO PLAY"
+        android:textSize="32sp"
+        android:textColor="#00FFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Game Objective Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OBJECTIVE"
+                android:textSize="20sp"
+                android:textColor="#FFD700"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Match colored energy nodes on the hexagonal grid to score points and charge powerful Nexus Cores. Beat your high score within 60 seconds!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="12dp" />
+
+            <!-- Controls Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTROLS"
+                android:textSize="20sp"
+                android:textColor="#FFD700"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Tap a node to select it\n• Tap adjacent matching nodes to build a chain\n• Match 3 or more nodes of the same color\n• Tap a selected node again to clear your selection\n• White nodes are wildcards - they match any color!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="12dp" />
+
+            <!-- Time Limit Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TIME LIMIT"
+                android:textSize="20sp"
+                android:textColor="#FFD700"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have 60 seconds to score as many points as possible. The game ends when time runs out, but the Healer Core can extend your time!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="12dp" />
+
+            <!-- Scoring Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SCORING SYSTEM"
+                android:textSize="20sp"
+                android:textColor="#FFD700"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Base Score = Nodes Matched × 10\n\nPattern Multipliers:\n• Regular Match (3+): 1×\n• Line Match (5+ in a row): 2×\n• Cluster Match (7+ nodes): 2.5×\n• Star Pattern (6+ circular): 3×\n\nCombo Multiplier:\n• Make quick consecutive matches to build combos\n• Each match adds +0.5× (max 5×)\n• Combo resets after 2 seconds of inactivity\n\nFinal Score = Base × Pattern × Combo"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="12dp" />
+
+            <!-- Nexus Cores Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NEXUS CORES"
+                android:textSize="20sp"
+                android:textColor="#FFD700"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Match nodes to charge cores with energy. Activate charged cores for powerful abilities!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="8dp" />
+
+            <!-- Core 1: Warrior (Red) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔴 WARRIOR (Red)"
+                android:textSize="16sp"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destroy all nodes of one color from the board. Great for clearing obstacles!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="8dp" />
+
+            <!-- Core 2: Mage (Blue) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔵 MAGE (Blue)"
+                android:textSize="16sp"
+                android:textColor="#0000FF"
+                android:textStyle="bold"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shuffle the entire board. Use when you're stuck or need better matches!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="8dp" />
+
+            <!-- Core 3: Rogue (Purple) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🟣 ROGUE (Purple)"
+                android:textSize="16sp"
+                android:textColor="#9370DB"
+                android:textStyle="bold"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create wildcard nodes that match any color. Perfect for extending chains!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="8dp" />
+
+            <!-- Core 4: Healer (Green) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🟢 HEALER (Green)"
+                android:textSize="16sp"
+                android:textColor="#00FF00"
+                android:textStyle="bold"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Extend game time by +10 to +25 seconds. Crucial for beating high scores!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="8dp" />
+
+            <!-- Core 5: Artificer (Yellow) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🟡 ARTIFICER (Yellow)"
+                android:textSize="16sp"
+                android:textColor="#FFFF00"
+                android:textStyle="bold"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Double your combo multiplier (2×). Combine with big matches for massive scores!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="12dp" />
+
+            <!-- Progression Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROGRESSION"
+                android:textSize="20sp"
+                android:textColor="#FFD700"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nexus Shards:\n• Earned after each game (Score ÷ 10)\n• Used to unlock and upgrade cores\n\nUnlocking Cores:\n• 1st Core: 1,000 shards\n• 2nd Core: 2,000 shards\n• 3rd Core: 3,000 shards\n• 4th Core: 5,000 shards\n\nUpgrading Cores:\n• Level 2: 500 shards\n• Level 3: 1,000 shards\n• Level 4: 1,000 shards\n\nUpgrades improve ability effectiveness and reduce energy cost!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="12dp" />
+
+            <!-- Strategy Tips Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="STRATEGY TIPS"
+                android:textSize="20sp"
+                android:textColor="#FFD700"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Work quickly to build combo multipliers\n• Look for special patterns (lines, clusters, stars)\n• Save cores for strategic moments\n• Use Healer cores when time is running low\n• Combine Artificer with large matches for max points\n• White wildcards can help create special patterns\n• Plan ahead - look for cascading matches!"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:paddingBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="BACK TO MENU"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:background="#00FFFF" />
+
+</LinearLayout>
